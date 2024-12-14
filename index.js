@@ -12,7 +12,8 @@ app.use(express.json())
 app.use("/todo", TodoRoutes)
 
 const PORT = process.env.PORT || 4000
-const connectionString = `mongodb://localhost:27017/WizInoa_Task`
+const connectionString = `mongodb+srv://mohamadashik268:ashik%401107@cluster0.mnhip.mongodb.net/WizInoa_Task`;
+
 const dbRun = async () => {
     try {
         await mongoose.connect(connectionString)
