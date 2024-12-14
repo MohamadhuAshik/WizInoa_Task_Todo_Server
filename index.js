@@ -23,6 +23,11 @@ const dbRun = async () => {
     }
 }
 dbRun()
+
+app.get("/", (req, res) => {
+    res.send("hello")
+})
+
 app.listen(PORT, (err) => {
     if (err) {
         console.log(err)
